@@ -1,0 +1,33 @@
+---
+layout: default
+title: 全部笔记
+description: 按时间倒序排列的全部文章。
+permalink: /archive/
+---
+
+<header class="page-header">
+  <p class="page-kicker">ARCHIVE</p>
+  <h1>全部笔记</h1>
+  <p class="page-sub">按时间倒序排列，共 {{ site.posts.size }} 篇。好文章值得被再次找到。</p>
+</header>
+
+<div class="chip-row" id="filter-chips">
+  <button class="chip-btn active" data-filter="all">全部</button>
+  {% for category in site.categories %}
+  <button class="chip-btn" data-filter="{{ category[0] }}">{{ category[0] }}</button>
+  {% endfor %}
+</div>
+
+<section class="post-list">
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year in posts_by_year %}
+  <h2 class="year-label">{{ year.name }}</h2>
+  {% for post in year.items %}
+  <a class="post-row" href="{{ post.url | relative_url }}" data-category="{{ post.categories.first }}">
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%m-%d' }}</time>
+    <span class="post-row-title">{{ post.title }}</span>
+    <span class="post-row-cat">{{ post.categories.first }}</span>
+  </a>
+  {% endfor %}
+  {% endfor %}
+</section>

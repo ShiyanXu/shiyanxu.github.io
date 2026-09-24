@@ -1,0 +1,29 @@
+# Shiyan's Notes — 站点配置
+title: Shiyan's Notes
+description: 分享日常学习笔记与经验总结：机器学习、前端开发、效率工具，以及偶尔的思考。
+author: Shiyan Xu
+lang: zh-CN
+url: "https://shiyanxu.github.io"
+baseurl: ""
+
+# 文章 URL：/posts/2026/09/18/transformer-attention/
+permalink: /posts/:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+# GitHub Pages 白名单插件，推送后自动生效
+plugins:
+  - jekyll-feed      # 自动生成 /feed.xml（RSS）
+  - jekyll-seo-tag   # 自动注入 SEO meta 标签
+  - jekyll-sitemap   # 自动生成 /sitemap.xml
+
+# 阅读速度（字/分钟，用于估算阅读时长）
+reading_speed: 400
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post

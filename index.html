@@ -1,0 +1,62 @@
+---
+layout: default
+title: 首页
+---
+
+<section class="hero">
+  <p class="kicker">个人博客 · 学习笔记</p>
+  <h1>把每一次学习，沉淀成可复用的知识。</h1>
+  <p class="subtitle">这里记录我的日常学习笔记与经验总结：机器学习、前端开发、效率工具，以及偶尔的思考。</p>
+  <div class="cta-row">
+    <a class="btn-primary" href="{{ '/archive/' | relative_url }}">开始阅读</a>
+    <a class="link-blue" href="#about">了解我</a>
+  </div>
+</section>
+
+<section class="image-tile">
+  <img class="hero-image" src="{{ '/assets/img/hero-desk.png' | relative_url }}" alt="整洁的学习桌面：笔记本、笔、笔记本电脑与咖啡">
+</section>
+
+<section class="section" id="articles">
+  <div class="section-header">
+    <h2>最新文章</h2>
+    <a class="link-blue" href="{{ '/archive/' | relative_url }}">查看全部</a>
+  </div>
+  <div class="card-row">
+    {% for post in site.posts limit:3 %}
+    <a class="card" href="{{ post.url | relative_url }}">
+      <span class="chip">{{ post.categories.first }}</span>
+      <h3>{{ post.title }}</h3>
+      <p class="excerpt">{{ post.description }}</p>
+      <div class="card-meta">
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+        <span class="link-blue small">阅读全文</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-dark" id="categories">
+  <h2>笔记分类</h2>
+  <p class="section-sub">按主题归档，每一篇笔记都有它的位置。</p>
+  <div class="card-row">
+    {% assign wanted = "机器学习,前端开发,效率工具,读书随笔" | split: "," %}
+    {% for name in wanted %}
+    {% assign posts_in_cat = site.categories[name] %}
+    <a class="cat-card" href="{{ '/categories/#' | append: name | relative_url }}">
+      <h3>{{ name }}</h3>
+      <p>{{ posts_in_cat.size | default: 0 }} 篇笔记</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <img class="avatar" src="{{ '/assets/img/avatar.png' | relative_url }}" alt="Shiyan Xu 的头像">
+  <div class="about-content">
+    <h2>关于我</h2>
+    <p>一名持续学习者，正在系统学习机器学习与前端工程。相信好记性不如烂笔头，也相信公开写作是最好的自我校验。这个博客是我的第二大脑外接显示器。</p>
+    <a class="link-blue" href="https://github.com/shiyanxu" target="_blank" rel="noopener">访问我的 GitHub 主页</a>
+  </div>
+</section>

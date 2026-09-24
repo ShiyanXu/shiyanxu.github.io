@@ -1,0 +1,26 @@
+---
+layout: default
+title: 笔记分类
+description: 按主题浏览全部分类与文章。
+permalink: /categories/
+---
+
+<header class="page-header">
+  <p class="page-kicker">CATEGORIES</p>
+  <h1>笔记分类</h1>
+  <p class="page-sub">按主题归档，每一篇笔记都有它的位置。</p>
+</header>
+
+<section class="post-list">
+  {% for category in site.categories %}
+  {% assign cat_name = category[0] %}
+  {% assign cat_posts = category[1] %}
+  <h2 class="year-label" id="{{ cat_name }}">{{ cat_name }} <span class="cat-count">{{ cat_posts.size }} 篇</span></h2>
+  {% for post in cat_posts %}
+  <a class="post-row" href="{{ post.url | relative_url }}">
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+    <span class="post-row-title">{{ post.title }}</span>
+  </a>
+  {% endfor %}
+  {% endfor %}
+</section>
