@@ -37,6 +37,9 @@ defaults:
       path: "kb"
     values:
       layout: kb
+      # 全局 permalink 以 / 结尾会让页面变成目录式 URL，
+      # 而文内相对链接会被改写成 .html，必须显式指回 .html 才匹配
+      permalink: "/:path/:basename.html"
 
 # 不参与构建的目录与文件
 exclude:

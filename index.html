@@ -9,7 +9,7 @@ title: 首页
   <p class="subtitle">{{ site.data.kb.total }} 篇笔记，{{ site.data.kb.categories | size }} 个分类：怎么跟 Agent 协作、怎么管它的上下文、怎么搭它外面那层壳、怎么把经验固化成能力。</p>
   <div class="cta-row">
     <a class="btn-primary" href="{{ '/kb/' | relative_url }}">进入知识库</a>
-    <a class="link-blue" href="{{ '/kb/updates/' | relative_url }}">看更新日志</a>
+    <a class="link-blue" href="{{ '/kb/updates.html' | relative_url }}">看更新日志</a>
   </div>
 </section>
 
@@ -38,7 +38,7 @@ title: 首页
 <section class="section section-dark" id="updates">
   <div class="section-header">
     <h2>最近更新</h2>
-    <a class="link-blue-invert" href="{{ '/kb/updates/' | relative_url }}">完整日志 →</a>
+    <a class="link-blue-invert" href="{{ '/kb/updates.html' | relative_url }}">完整日志 →</a>
   </div>
   <div class="home-updates">
     {% for day in site.data.kb_updates.days limit:3 %}
