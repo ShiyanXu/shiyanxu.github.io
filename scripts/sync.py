@@ -347,6 +347,34 @@ def write_kb_index(repo: Path, vault: Path, cats: dict, dry: bool):
 
 # ---------------------------------------------------------------- git
 
+def push_with_retry(repo: Path) -> bool:
+    p = run(["git", "push", "origin", "HEAD:main"], repo, check=False)
+    if p.returncode != 0:
+        print("  推送失败，尝试 rebase 后重试…")
+        run(["git", "pull", "--rebase", "--autostash", "origin", "main"], repo, check=False)
+        p = run(["git", "push", "origin", "HEAD:main"], repo, check=False)
+        if p.returncode != 0:
+            print(p.stderr, file=sys.stderr)
+            return False
+    return True
+
+
+def pending_commits(repo: Path) -> int:
+    out = run(["git", "rev-list", "--count", "@{u}..HEAD"], repo, check=False).stdout.strip()
+    return int(out) if out.isdigit() else 0
+
+
+def flush_pending(repo: Path):
+    """补推上次没推成功的提交（推送失败时本地 commit 仍在）。"""
+    n = pending_commits(repo)
+    if n > 0:
+        print(f"发现 {n} 个未推送的提交，先补推…")
+        if push_with_retry(repo):
+            print("✓ 补推成功")
+        else:
+            print("⚠️  补推仍然失败，本次不再继续")
+
+
 def commit_and_push(repo: Path, today: str, counts: dict, push: bool, dry: bool):
     if dry or not git_has_changes(repo):
         return False
@@ -365,8 +393,7 @@ def commit_and_push(repo: Path, today: str, counts: dict, push: bool, dry: bool)
 
     # 一天一提交：若 HEAD 已是今天由本脚本产生的提交且尚未推送，则 amend
     head_msg = run(["git", "log", "-1", "--format=%s"], repo, check=False).stdout.strip()
-    ahead = run(["git", "rev-list", "--count", "@{u}..HEAD"], repo, check=False).stdout.strip()
-    can_amend = head_msg.startswith(f"知识库更新 {today}") and ahead in ("0", "")
+    can_amend = head_msg.startswith(f"知识库更新 {today}") and pending_commits(repo) == 0
 
     if can_amend:
         run(["git", "commit", "--amend", "-m", msg], repo)
@@ -376,15 +403,10 @@ def commit_and_push(repo: Path, today: str, counts: dict, push: bool, dry: bool)
         print(f"✓ 已提交：{msg}")
 
     if push:
-        p = run(["git", "push", "origin", "HEAD:main"], repo, check=False)
-        if p.returncode != 0:
-            print("  推送失败，尝试 rebase 后重试…")
-            run(["git", "pull", "--rebase", "--autostash", "origin", "main"], repo, check=False)
-            p = run(["git", "push", "origin", "HEAD:main"], repo, check=False)
-            if p.returncode != 0:
-                print(p.stderr, file=sys.stderr)
-                raise SystemExit("推送失败")
-        print("✓ 已推送，GitHub Pages 稍后自动构建")
+        if push_with_retry(repo):
+            print("✓ 已推送，GitHub Pages 稍后自动构建")
+        else:
+            raise SystemExit("推送失败（提交已保存在本地，下次运行会自动补推）")
     return True
 
 
@@ -409,6 +431,9 @@ def main():
     today = args.today or date.today().isoformat()
     manifest_path = repo / ".kb-manifest.json"
     manifest = {"version": 1, "files": {}, "removed": []} if args.force else load_manifest(manifest_path)
+
+    if not args.dry_run and not args.no_push:
+        flush_pending(repo)
 
     new, categories = scan_vault(vault)
     added, modified, removed = diff_files(manifest, new)

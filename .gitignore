@@ -1,0 +1,8 @@
+# 构建产物与本地日志
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+.publish.log
+.launchd.log
+.DS_Store
