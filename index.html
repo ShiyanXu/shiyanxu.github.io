@@ -4,17 +4,65 @@ title: 首页
 ---
 
 <section class="hero">
-  <p class="kicker">个人博客 · 学习笔记</p>
+  <p class="kicker">个人知识库 · Agent 工程</p>
   <h1>把每一次学习，沉淀成可复用的知识。</h1>
-  <p class="subtitle">这里记录我的日常学习笔记与经验总结：机器学习、前端开发、效率工具，以及偶尔的思考。</p>
+  <p class="subtitle">{{ site.data.kb.total }} 篇笔记，{{ site.data.kb.categories | size }} 个分类：怎么跟 Agent 协作、怎么管它的上下文、怎么搭它外面那层壳、怎么把经验固化成能力。</p>
   <div class="cta-row">
-    <a class="btn-primary" href="{{ '/archive/' | relative_url }}">开始阅读</a>
-    <a class="link-blue" href="#about">了解我</a>
+    <a class="btn-primary" href="{{ '/kb/' | relative_url }}">进入知识库</a>
+    <a class="link-blue" href="{{ '/kb/updates/' | relative_url }}">看更新日志</a>
   </div>
 </section>
 
 <section class="image-tile">
   <img class="hero-image" src="{{ '/assets/img/hero-desk.png' | relative_url }}" alt="整洁的学习桌面：笔记本、笔、笔记本电脑与咖啡">
+</section>
+
+<section class="section" id="kb">
+  <div class="section-header">
+    <h2>知识分类</h2>
+    <a class="link-blue" href="{{ '/kb/' | relative_url }}">全部笔记</a>
+  </div>
+  <div class="kb-cat-grid">
+    {% for c in site.data.kb.categories %}
+    {% assign first = c.pages.first %}
+    <a class="kb-cat-tile" href="{{ first.url | relative_url }}">
+      <span class="kb-cat-num">{{ c.key | slice: 0, 2 }}</span>
+      <h3>{{ c.name }}</h3>
+      <p>{{ c.desc }}</p>
+      <span class="kb-cat-meta">{{ c.count }} 篇</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-dark" id="updates">
+  <div class="section-header">
+    <h2>最近更新</h2>
+    <a class="link-blue-invert" href="{{ '/kb/updates/' | relative_url }}">完整日志 →</a>
+  </div>
+  <div class="home-updates">
+    {% for day in site.data.kb_updates.days limit:3 %}
+    <div class="home-day">
+      <div class="home-day-head">
+        <span class="home-day-date">{{ day.date | date: "%m-%d" }}</span>
+        <span class="home-day-count">
+          {% if day.added.size > 0 %}+{{ day.added.size }}{% endif %}
+          {% if day.modified.size > 0 %} ~{{ day.modified.size }}{% endif %}
+        </span>
+      </div>
+      <ul class="home-day-list">
+        {% for item in day.added limit:4 %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+        {% for item in day.modified limit:3 %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% else %}
+    <p class="home-empty">还没有更新记录。</p>
+    {% endfor %}
+  </div>
 </section>
 
 <section class="section" id="articles">
@@ -37,26 +85,11 @@ title: 首页
   </div>
 </section>
 
-<section class="section section-dark" id="categories">
-  <h2>笔记分类</h2>
-  <p class="section-sub">按主题归档，每一篇笔记都有它的位置。</p>
-  <div class="card-row">
-    {% assign wanted = "机器学习,前端开发,效率工具,读书随笔" | split: "," %}
-    {% for name in wanted %}
-    {% assign posts_in_cat = site.categories[name] %}
-    <a class="cat-card" href="{{ '/categories/#' | append: name | relative_url }}">
-      <h3>{{ name }}</h3>
-      <p>{{ posts_in_cat.size | default: 0 }} 篇笔记</p>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-
 <section class="section about" id="about">
   <img class="avatar" src="{{ '/assets/img/avatar.png' | relative_url }}" alt="Shiyan Xu 的头像">
   <div class="about-content">
     <h2>关于我</h2>
-    <p>一名持续学习者，正在系统学习机器学习与前端工程。相信好记性不如烂笔头，也相信公开写作是最好的自我校验。这个博客是我的第二大脑外接显示器。</p>
+    <p>一名持续学习者，正在系统学习机器学习与 Agent 工程。相信好记性不如烂笔头，也相信公开写作是最好的自我校验。这个站点是我的第二大脑外接显示器。</p>
     <a class="link-blue" href="https://github.com/shiyanxu" target="_blank" rel="noopener">访问我的 GitHub 主页</a>
   </div>
 </section>

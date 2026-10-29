@@ -1,0 +1,74 @@
+{% assign my_file = page.kb_src | split: '/' | last %}
+{% assign ci = -1 %}
+{% for c in site.data.kb.categories %}
+  {% if c.key == page.kb_cat_key %}
+    {% assign cat = c %}
+    {% for p in c.pages %}
+      {% if p.file == my_file %}{% assign ci = forloop.index0 %}{% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign prev_page = nil %}
+{% assign next_page = nil %}
+{% if ci > 0 %}{% assign pi = ci | minus: 1 %}{% assign prev_page = cat.pages[pi] %}{% endif %}
+{% if ci >= 0 %}
+  {% assign ni = ci | plus: 1 %}
+  {% if ni < cat.pages.size %}{% assign next_page = cat.pages[ni] %}{% endif %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/kb.css' | relative_url }}">
+</head>
+<body class="kb-body">
+
+  {% include nav.html %}
+
+  <div class="kb-shell">
+    {% include kb-sidebar.html %}
+
+    <main class="kb-main">
+      {% unless page.kb_home %}
+      <nav class="kb-crumb">
+        <a href="{{ '/kb/' | relative_url }}">知识库</a>
+        {% if page.kb_cat %}<span class="kb-sep">/</span><span>{{ page.kb_cat }}</span>{% endif %}
+      </nav>
+      {% endunless %}
+
+      <article class="kb-article">
+        {{ content }}
+      </article>
+
+      {% if page.kb_updated and page.kb_home != true %}
+      <div class="kb-meta">
+        <span class="kb-meta-dot"></span>本篇同步于 {{ page.kb_updated }}
+      </div>
+      {% endif %}
+
+      {% if prev_page or next_page %}
+      <nav class="kb-prevnext">
+        {% if prev_page %}
+        <a class="kb-pn" href="{{ prev_page.url | relative_url }}">
+          <span class="kb-pn-label">上一篇</span>
+          <span class="kb-pn-title">{{ prev_page.title }}</span>
+        </a>
+        {% else %}<span></span>{% endif %}
+        {% if next_page %}
+        <a class="kb-pn kb-pn-right" href="{{ next_page.url | relative_url }}">
+          <span class="kb-pn-label">下一篇</span>
+          <span class="kb-pn-title">{{ next_page.title }}</span>
+        </a>
+        {% endif %}
+      </nav>
+      {% endif %}
+    </main>
+  </div>
+
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

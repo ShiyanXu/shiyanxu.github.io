@@ -1,0 +1,37 @@
+{% assign cat = nil %}
+{% assign my_file = page.kb_src | split: '/' | last %}
+{% for c in site.data.kb.categories %}
+  {% if c.key == page.kb_cat_key %}{% assign cat = c %}{% endif %}
+{% endfor %}
+
+<aside class="kb-side">
+  <a class="kb-side-home" href="{{ '/kb/' | relative_url }}">
+    <span class="kb-side-dot"></span>知识库
+    <span class="kb-side-count">{{ site.data.kb.total }}</span>
+  </a>
+
+  <nav class="kb-nav">
+    {% for c in site.data.kb.categories %}
+      {% assign is_here = false %}
+      {% if page.kb_cat_key == c.key %}{% assign is_here = true %}{% endif %}
+      <details class="kb-group" {% if is_here or page.kb_home %}open{% endif %}>
+        <summary class="kb-group-head">
+          <span class="kb-group-name">{{ c.name }}</span>
+          <span class="kb-group-num">{{ c.count }}</span>
+        </summary>
+        <ul class="kb-group-list">
+          {% for p in c.pages %}
+            {% assign here = false %}
+            {% if page.kb_cat_key == c.key and my_file == p.file %}{% assign here = true %}{% endif %}
+            <li>
+              <a class="kb-link {% if here %}is-active{% endif %}" href="{{ p.url | relative_url }}"
+                 title="{{ p.title }}">{{ p.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endfor %}
+  </nav>
+
+  <a class="kb-side-updates" href="{{ '/kb/updates/' | relative_url }}">更新日志 →</a>
+</aside>

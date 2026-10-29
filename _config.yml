@@ -17,6 +17,12 @@ plugins:
   - jekyll-feed      # 自动生成 /feed.xml（RSS）
   - jekyll-seo-tag   # 自动注入 SEO meta 标签
   - jekyll-sitemap   # 自动生成 /sitemap.xml
+  - jekyll-relative-links  # 知识库里的 .md 相对链接 → 对应 .html
+
+# 知识库笔记之间用相对路径互链，交给插件统一改写
+relative_links:
+  enabled: true
+  collections: false
 
 # 阅读速度（字/分钟，用于估算阅读时长）
 reading_speed: 400
@@ -27,3 +33,17 @@ defaults:
       type: "posts"
     values:
       layout: post
+  - scope:
+      path: "kb"
+    values:
+      layout: kb
+
+# 不参与构建的目录与文件
+exclude:
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .kb-manifest.json
+  - vendor
+

@@ -1,0 +1,787 @@
+{
+  "version": 1,
+  "files": {
+    "00-总览/00-知识地图.md": {
+      "sha": "9f98320dfd76fe5ea0eda7e07c778d0a1142c1fa6d05cdc068e77114781c0eee",
+      "title": "知识地图：这个库里有什么",
+      "dir": "00-总览",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "00-总览/01-术语表.md": {
+      "sha": "5f2069867c3bac5edae0773c6f61c8dd89f306781bf9079650fe42943737eba3",
+      "title": "术语表",
+      "dir": "00-总览",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "00-总览/02-来源与取舍.md": {
+      "sha": "f165cfbf9265ebdee3302d60439d366d3e740c4d440245e2fba553befc9c7d96",
+      "title": "来源、合并与取舍",
+      "dir": "00-总览",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "00-总览/03-书签收藏.md": {
+      "sha": "70829d17e97e9de1ff6e99e712e7a2cffbaa151209f4c5f0004db039060de25e",
+      "title": "零散书签",
+      "dir": "00-总览",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "00-总览/04-素材索引.md": {
+      "sha": "0d372ae7c1b832bf8f3d05e82b5b4be9df7fb1f140dae5e3642694a1d927db8e",
+      "title": "素材索引：76 张截图（按内容时间）",
+      "dir": "00-总览",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "01-Agent心法/01-两头理论.md": {
+      "sha": "4bc643df546a7da77ab7a6cd18b641999a6dfc5783b0529bcab9fabcfd13aaaa",
+      "title": "两头理论：用好 Coding Agent，关键在开头和结尾",
+      "dir": "01-Agent心法",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "01-Agent心法/02-多模型分工与编排.md": {
+      "sha": "6435d560cc7881b278e3886973dc384e036bfa8a71202df30226b94bcc2d0a90",
+      "title": "多模型分工与编排",
+      "dir": "01-Agent心法",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "01-Agent心法/03-长任务与Ralph-Loop.md": {
+      "sha": "8f7cf1f29d72691760d807df34d2aae36786f12d8f2203fffc85d455739c3905",
+      "title": "长任务与 Ralph Loop",
+      "dir": "01-Agent心法",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "01-Agent心法/04-文档先行与工程纪律.md": {
+      "sha": "2b814d67ae756a17b5591539768f94a4c27aae9260f9ed40afc199b5c6e6ddaf",
+      "title": "文档先行、原型驱动与工程纪律",
+      "dir": "01-Agent心法",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "02-上下文工程/01-有效上下文的构成.md": {
+      "sha": "14385d5cd0d5ef4fd81c38f31fa36a41e8debfd29b3cb70e3a41fb7aa466f52f",
+      "title": "有效上下文的构成：把注意力预算花在刀刃上",
+      "dir": "02-上下文工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "02-上下文工程/02-上下文腐化与长时程策略.md": {
+      "sha": "ac3f6e0d2ee5448dd05ab98f27b637cc939473cf039b51998a447ec07c26d361",
+      "title": "上下文腐化与长时程策略：压缩、笔记、子代理",
+      "dir": "02-上下文工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "03-提示词工程/01-交代全局上下文.md": {
+      "sha": "9529a305f37fa9c727d7e3c09b2b5f599d9abc65348f099c10bd369e9a8eddf4",
+      "title": "交代全局上下文 ＞ 写死局部约束",
+      "dir": "03-提示词工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "03-提示词工程/02-Step-back与目标冻结.md": {
+      "sha": "931153934ab6aa1b698148b3b3b255d828edc589c85da6e913b1d32e6270bcb3",
+      "title": "Step back：Agent 原地打转时的急救词",
+      "dir": "03-提示词工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "03-提示词工程/03-反问式提示词.md": {
+      "sha": "5b37370acb81e237ea55cc0cba77a664b707cf46dea847b285086de3c4e40d8e",
+      "title": "反问式提示词：先提问，再回答",
+      "dir": "03-提示词工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "03-提示词工程/04-安德森提示词与反谄媚.md": {
+      "sha": "448d4298e1cfcd2bebc47290919731bf18e01906a3bc6f403ce404e142b71ca3",
+      "title": "安德森提示词：一份「反谄媚」的系统提示词样本",
+      "dir": "03-提示词工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "03-提示词工程/05-提示词的分层与工程化.md": {
+      "sha": "9db8892bf4a4b6e318207de27e27102530f7b886cb37dc5dcf316ca50bd56ffb",
+      "title": "提示词的分层与工程化",
+      "dir": "03-提示词工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "04-Harness工程/01-Harness是什么.md": {
+      "sha": "a955854881086cfe10418581b15b0a939dd59ec99ef5d69f04f7b5b016998d93",
+      "title": "Harness 是什么：模型之外的那一层",
+      "dir": "04-Harness工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "04-Harness工程/02-长时程Agent的Harness.md": {
+      "sha": "14b016846b2bf410f0a9e4126c5d2fc316a65bc635d4bf348ee95f6cad64e90f",
+      "title": "长时程 Agent 的 Harness：把「跨窗口交接」当一等公民",
+      "dir": "04-Harness工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "04-Harness工程/03-Domain-Harness设计方法.md": {
+      "sha": "7d1efab90c9c62b37b2f7dd090c6b06b60d869935d6c610600236e4eb363f359",
+      "title": "Domain Harness 五步法：把领域知识做进模型外面那层壳",
+      "dir": "04-Harness工程",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "05-Skills体系/01-Skill的定位与价值.md": {
+      "sha": "c35abe960094adcd2f6982b2d21f4bfbc1213b19ace3e46ee5abd44faf7361a0",
+      "title": "Skill 的定位：模型越强，为什么反而更需要 Skill",
+      "dir": "05-Skills体系",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "05-Skills体系/02-Skill的结构与加载.md": {
+      "sha": "1a2a82c79956ed567f0a3f1e861cca73a9ee5e8ea197032630d08749c84e4cae",
+      "title": "Skill 的结构与渐进式披露",
+      "dir": "05-Skills体系",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "05-Skills体系/03-写Skill与迭代Skill.md": {
+      "sha": "be6720fc2dcd82165258b52ceb58ab6900054ed7a43172b33d6031861f617009",
+      "title": "写 Skill、评测 Skill、迭代 Skill",
+      "dir": "05-Skills体系",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "05-Skills体系/04-Skill与MCP-Subagent-Prompt的边界.md": {
+      "sha": "8268e0cd16c6e8294bfc53b24a6b5772ad6ec80bcd81a8aa4b2e574b061c623b",
+      "title": "Skill 的边界：与 MCP、Subagent、Prompt 怎么分工",
+      "dir": "05-Skills体系",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "05-Skills体系/05-Skill生态与案例.md": {
+      "sha": "c183387fb143c034565647bb099ee3b27185e62590003517d0deee77e4530449",
+      "title": "Skill 生态与典型案例",
+      "dir": "05-Skills体系",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "06-MCP与工具接入/01-MCP协议原理与取舍.md": {
+      "sha": "cecbee25023fb88f9663e2d3c0ee8d9685e34e970b4f680a7ac7a6267b13773f",
+      "title": "MCP 协议原理，以及它与 Computer Use 的取舍",
+      "dir": "06-MCP与工具接入",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "06-MCP与工具接入/02-实战：Blender、MMD与adb.md": {
+      "sha": "6a77d4af44959eaac6b7d698f86ecbaeb541865a09ed902ed645e8bd0cc2f47b",
+      "title": "实战：Blender 建模、MMD 自动化，以及 adb 报销闭环",
+      "dir": "06-MCP与工具接入",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "06-MCP与工具接入/03-MCP配置与安全边界.md": {
+      "sha": "bc580da9808efd5299ab1c34c4f811c5f09bd7eb1a960fd3786526e24cde5351",
+      "title": "MCP 配置与安全边界",
+      "dir": "06-MCP与工具接入",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "07-工作流与循环/01-Agent循环与工作流基础.md": {
+      "sha": "b5c09b5b8643909f16e0f5e7ba673da822e0d4153050dc8c33e9eeaaa464061c",
+      "title": "Agent 循环与工作流基础",
+      "dir": "07-工作流与循环",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "07-工作流与循环/02-Loop-Engineering.md": {
+      "sha": "5de375c1277501b78128ba90f5bd784fedcc7db842fdd0a16f404966e9815067",
+      "title": "Loop Engineering：从「回答一次」到「持续负责一项工作」",
+      "dir": "07-工作流与循环",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "07-工作流与循环/03-循环的五个动作.md": {
+      "sha": "2ddf78032253f77ce12409ec6ef954b2e4034128152e964e24494f7bb7a5472a",
+      "title": "循环的五个动作：发现、交接、验证、持久化、调度",
+      "dir": "07-工作流与循环",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "07-工作流与循环/04-多Agent协作.md": {
+      "sha": "79c8f790159ecc57ea1211698846e7ed75410c70bfe7904129070f07b37ebd85",
+      "title": "多 Agent 协作：四种拓扑与两类风险",
+      "dir": "07-工作流与循环",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "07-工作流与循环/05-记忆、工作区与自动化.md": {
+      "sha": "8e5ce59f78ba2e4c61a1d0a1176f507199a5cd2e531d0ac09fbf3c4040e1073f",
+      "title": "记忆、工作区与可持续自动化",
+      "dir": "07-工作流与循环",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "08-模型与推理/01-模型选型与路由.md": {
+      "sha": "1c8a97b954d7629a300585b19908f0a0165ef24605596b702f1b4f7b67927192",
+      "title": "模型选型：能力、上下文、成本三维",
+      "dir": "08-模型与推理",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "08-模型与推理/02-思考强度与上下文压缩.md": {
+      "sha": "3f7396ad7503c3d06486de57296bbc054fdf0661083d099789d041a16537ff72",
+      "title": "思考强度（Effort）与 272K 上下文窗口",
+      "dir": "08-模型与推理",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "08-模型与推理/03-本地部署与量化.md": {
+      "sha": "06079937991ab468c2c06ebde6457f17ecfc62527c250d53ad6969020ad8aaae",
+      "title": "本地部署与量化选型",
+      "dir": "08-模型与推理",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "08-模型与推理/04-推理内部机制.md": {
+      "sha": "47b2ba38e9a1e2a508094a7f30bc241f783b322e212a27889eeb00a9d2be482b",
+      "title": "推理内部机制：一个 token 是怎么被算出来的",
+      "dir": "08-模型与推理",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "08-模型与推理/05-端侧决策与训练沙箱.md": {
+      "sha": "74c54e684c04a2861d04d07bffc40524da7d5ad0e654fb7b9b3e68a1c2842f26",
+      "title": "端侧决策模型（Jev）与 Agent 训练沙箱（DSeC）",
+      "dir": "08-模型与推理",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "09-LLM原理与训练/01-Transformer与注意力.md": {
+      "sha": "581b2f9d210a9262651d3a2a042b293ed8e8a6c24738de7f3279cbc4646adeea",
+      "title": "Transformer 与注意力机制",
+      "dir": "09-LLM原理与训练",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "09-LLM原理与训练/02-预训练、微调与RLHF.md": {
+      "sha": "45fda209a5bfaca45d3268e7b33f2a994a0c3dbda51ea59136b2c7ca5b88afd3",
+      "title": "预训练、微调与 RLHF（PPO / DPO / GRPO）",
+      "dir": "09-LLM原理与训练",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "09-LLM原理与训练/03-CUDA与推理优化.md": {
+      "sha": "a8ddb006d7d29e3548ca4f836baa723d30873f3b77fb3ad6b7ba8d756eb99f68",
+      "title": "CUDA 与推理优化：为什么 Flash Attention 重要",
+      "dir": "09-LLM原理与训练",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "09-LLM原理与训练/04-从Transformer到晶体管.md": {
+      "sha": "048141cbd5c4abc53d3f37325ff8d6a3cb8720854bfc18e3c3bf8cc0f2f3399a",
+      "title": "从 Transformer 到晶体管：把整条技术栈走一遍",
+      "dir": "09-LLM原理与训练",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/01-起步：安装、工作区与权限.md": {
+      "sha": "c4f784c28f1c8e6425dc2b8888638a6f61048c0f30fe30671451fc5035ce8dd6",
+      "title": "DSH 起步：安装、工作区与权限",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/02-会话、命令与轨迹.md": {
+      "sha": "6dd892dac0df2796410cf99813debd3ad193e15b1e3fd156c08fc5f58a41a7b7",
+      "title": "会话、命令与轨迹",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/03-计划模式与目标.md": {
+      "sha": "d57a59b7f5a1267a80301cd2d973ec167cf9da52337add3181d2f46642cf07f1",
+      "title": "计划模式与目标：两个防跑偏的开关",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/04-子代理、后台任务与工作流.md": {
+      "sha": "4830d70afdb92a68f70b87d3b4198f4676038c0dbb44bd2280171247b266bdc7",
+      "title": "子代理、后台任务与工作流：三种「把活分出去」",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/05-插件、预设与CLI.md": {
+      "sha": "f94edc9a5ecc9c07b743aab284ea89f18fd05274bb4617d0d7a49137127ab52d",
+      "title": "插件、预设与 CLI：DSH 的三种「换形态」",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/06-实战-生成README.md": {
+      "sha": "434917b3fba12b5183ebad24be046538406187c8a78aded576fc4a7783af6875",
+      "title": "实战：用 DSH 给项目生成一份 README",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "10-DSH实操/07-插件热插拔与Cordis.md": {
+      "sha": "c31a34183566809d9a0346ce449627f694acdf148d467e100d7d1be3f74ef5fb",
+      "title": "插件热插拔与 Cordis：文件出现，能力就在",
+      "dir": "10-DSH实操",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "11-职业与合规/01-根基崩溃论.md": {
+      "sha": "69c73edd4b2425cb352ba949fc62c1310cf7d2d3dacc38c86de8d8265a493d54",
+      "title": "根基崩溃论：AI 加剧的「黑箱化」",
+      "dir": "11-职业与合规",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "11-职业与合规/02-验证成为新瓶颈.md": {
+      "sha": "7c2facc7d80d19c0612e4c3388c8e1de6a40a83d0febc2de6a12f7be50506f0e",
+      "title": "验证成为新瓶颈",
+      "dir": "11-职业与合规",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "11-职业与合规/03-用户分层与产品定位.md": {
+      "sha": "35496439cb05d08374a9db17969aa126606bd3e2370a5efca168d2d943977c02",
+      "title": "用户分层：To B / To C，以及「傻子」争议",
+      "dir": "11-职业与合规",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "11-职业与合规/04-合规与监管红线.md": {
+      "sha": "970e9295120a9fb53d7364017b2b05ca9e857319828f614e76f345b502e85717",
+      "title": "合规与监管红线",
+      "dir": "11-职业与合规",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "12-学习方法论/01-费曼学习法.md": {
+      "sha": "8e7571d2de411743115c963b776f7660d9638f7a09c740a9fa870c1c40413793",
+      "title": "费曼学习法",
+      "dir": "12-学习方法论",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "12-学习方法论/02-输出飞轮与工程化成长.md": {
+      "sha": "889ad6524ed30571920a5ae47bc1d333401d05f2872e5c7e71a0b48be941b08b",
+      "title": "输出飞轮与工程化成长",
+      "dir": "12-学习方法论",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "13-工程实践/01-浏览器端视频编辑.md": {
+      "sha": "2f92f699b82b6e923cbc3bc921ba3d0cf7d0268893da11a22cdd83122c0a3286",
+      "title": "案例：浏览器端视频编辑的技术选型",
+      "dir": "13-工程实践",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "13-工程实践/02-AGENTS-md与项目上下文.md": {
+      "sha": "28e4ae3c03e0cd77ceb2340845b0538e2b56f2816400ba6b154e33ce1d4866cf",
+      "title": "AGENTS.md：给 Agent 的项目上下文文件",
+      "dir": "13-工程实践",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "13-工程实践/03-AI辅助技术选型的方法.md": {
+      "sha": "5a047c3f3bbe2351af63a8f91c0ca78422469fa7e999e791682fd94edcce396b",
+      "title": "从一次选型里提炼的方法：怎么让 AI 做架构评估",
+      "dir": "13-工程实践",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "13-工程实践/04-智能体优先的仓库工程.md": {
+      "sha": "36f571b278310e4e48820cc98a5e3984110bd6d7107e19abbb0b9592fcd011af",
+      "title": "智能体优先的仓库：把工程纪律从代码挪到结构上",
+      "dir": "13-工程实践",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "14-行业观察/01-WorkBuddy与腾讯.md": {
+      "sha": "f554b79bce08ce2fbb5b84b985bfbef45ce7713542cc50e94184dbfd2e4ee85e",
+      "title": "WorkBuddy 与腾讯：面向大众的 AI 助手",
+      "dir": "14-行业观察",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    },
+    "14-行业观察/02-行业动态.md": {
+      "sha": "d95ed5327d59693be33cbd8ece1973c18d64c7eb73755a4a0feaa8f224231055",
+      "title": "行业动态：论文、口水与监管",
+      "dir": "14-行业观察",
+      "first": "2026-10-29",
+      "last": "2026-10-29",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "action": "added"
+        }
+      ]
+    }
+  },
+  "removed": [],
+  "generated": "2026-10-29T17:17:55"
+}
