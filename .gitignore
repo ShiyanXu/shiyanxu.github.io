@@ -6,3 +6,6 @@ _site/
 .publish.log
 .launchd.log
 .DS_Store
+
+# WorkBuddy 会话运行时在此目录下生成的临时数据（automation 执行时产生）
+.workbuddy/
