@@ -42,22 +42,35 @@ python3 scripts/sync.py --force      # 忽略同步记录，全量重建
 
 ### 定时任务
 
+**主方式：WorkBuddy 每日任务**（每天 22:30 触发，跑 `scripts/publish.sh`）。
+要求 WorkBuddy 那个时间在运行；没跑的话第二天手动补一次 `./scripts/publish.sh` 也一样。
+
+**备选：launchd**（不依赖 WorkBuddy，但需要手动装一次。当前环境里 WorkBuddy 的终端调用不了
+`launchctl`，所以这一步得你在自己的终端执行）：
+
 ```bash
-# 加载（一次性）
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.shiyanxu.kb-publish.plist
-
-# 立刻试跑一次
-launchctl kickstart -k gui/$(id -u)/com.shiyanxu.kb-publish
-
-# 确认已加载
-launchctl list | grep kb-publish
-
-# 卸载
-launchctl bootout gui/$(id -u)/com.shiyanxu.kb-publish
+launchctl kickstart -k gui/$(id -u)/com.shiyanxu.kb-publish   # 立刻试跑
+launchctl list | grep kb-publish                               # 确认已加载
+launchctl bootout gui/$(id -u)/com.shiyanxu.kb-publish         # 卸载
 ```
 
 日志：`.publish.log`（脚本输出）、`.launchd.log`（launchd 自身报错）。
 机器 22:30 若在睡眠，唤醒后 launchd 会补跑一次。
+
+### 为什么无人值守也能推送
+
+推送**不走 `~/.ssh`**，用的是一把专用部署密钥：
+
+| 文件 | 作用 |
+|---|---|
+| `~/.config/kb-site/deploy_key` | 私钥，只对该仓库有写权限 |
+| `~/.config/kb-site/deploy_key.pub` | 公钥，需加到仓库 Settings → Deploy keys 并勾选 **Allow write access** |
+| `~/.config/kb-site/known_hosts` | 独立的 github.com 主机密钥，丢了脚本会自动重建 |
+
+`publish.sh` 里用 `GIT_SSH_COMMAND` 显式指定这两个文件，并加 `IdentitiesOnly=yes`。
+这样运行时完全不碰 `~/.ssh`——那里的读取规则是「每次询问」，碰它就会卡在人工授权上。
+换成 `~/.config` 之后，整个推送在沙箱内即可完成，不需要任何确认。
 
 ## 目录结构
 
