@@ -72,6 +72,11 @@ launchctl bootout gui/$(id -u)/com.shiyanxu.kb-publish         # 卸载
 这样运行时完全不碰 `~/.ssh`——那里的读取规则是「每次询问」，碰它就会卡在人工授权上。
 换成 `~/.config` 之后，整个推送在沙箱内即可完成，不需要任何确认。
 
+**撤销与轮换**：到仓库 Settings → Deploy keys 删掉 `kb-daily-publish` 即刻失效；
+之后重新 `ssh-keygen -t ed25519 -f ~/.config/kb-site/deploy_key -N "" -C kb-daily-publish`
+并把新公钥加回去即可，`publish.sh` 不用改。
+密钥丢了本地也读不到，只能按上面的流程重来——但仓库内容不受影响。
+
 ## 目录结构
 
 ```
