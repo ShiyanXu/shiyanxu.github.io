@@ -246,6 +246,8 @@
   margin: 40px 0;
 }
 
+.kb-article img { border-radius: 12px; margin: 24px auto; }
+
 /* ---------------- 首页统计条 ---------------- */
 .kb-stats {
   display: flex;
@@ -472,7 +474,6 @@
   font-size: 13.5px;
   color: #d6d6da;
   line-height: 1.5;
-  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
