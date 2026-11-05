@@ -780,8 +780,21 @@
           "action": "added"
         }
       ]
+    },
+    "09-LLM原理与训练/05-存储精度 Q4_K FP16.md": {
+      "sha": "8ba575feb74d6e8b219db33156214152f906d0dbdd8a5ae1d1433a1d21d9c1fc",
+      "title": "05-存储精度 Q4_K FP16",
+      "dir": "09-LLM原理与训练",
+      "first": "2026-11-05",
+      "last": "2026-11-05",
+      "events": [
+        {
+          "date": "2026-11-05",
+          "action": "added"
+        }
+      ]
     }
   },
   "removed": [],
-  "generated": "2026-10-29T17:17:55"
+  "generated": "2026-11-05T10:09:01"
 }

@@ -1,5 +1,5 @@
 {
-  "total": 60,
+  "total": 61,
   "categories": [
     {
       "key": "00-总览",
@@ -336,7 +336,7 @@
       "key": "09-LLM原理与训练",
       "name": "LLM 原理与训练",
       "desc": "底层到底怎么工作",
-      "count": 4,
+      "count": 5,
       "pages": [
         {
           "title": "Transformer 与注意力机制",
@@ -365,6 +365,13 @@
           "file": "04-从Transformer到晶体管.md",
           "first": "2026-10-29",
           "last": "2026-10-29"
+        },
+        {
+          "title": "05-存储精度 Q4_K FP16",
+          "url": "/kb/09-LLM原理与训练/05-存储精度 Q4_K FP16.html",
+          "file": "05-存储精度 Q4_K FP16.md",
+          "first": "2026-11-05",
+          "last": "2026-11-05"
         }
       ]
     },

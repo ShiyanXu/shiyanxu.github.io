@@ -1,7 +1,19 @@
 {
-  "total": 60,
-  "last_sync": "2026-10-29T17:17:55",
+  "total": 61,
+  "last_sync": "2026-11-05T10:09:01",
   "days": [
+    {
+      "date": "2026-11-05",
+      "added": [
+        {
+          "title": "05-存储精度 Q4_K FP16",
+          "url": "/kb/09-LLM原理与训练/05-存储精度 Q4_K FP16.html",
+          "category": "LLM 原理与训练"
+        }
+      ],
+      "modified": [],
+      "removed": []
+    },
     {
       "date": "2026-10-29",
       "added": [
