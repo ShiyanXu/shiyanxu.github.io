@@ -1,7 +1,40 @@
 {
-  "total": 61,
-  "last_sync": "2026-11-05T10:09:01",
+  "total": 63,
+  "last_sync": "2026-11-11T22:31:03",
   "days": [
+    {
+      "date": "2026-11-11",
+      "added": [
+        {
+          "title": "00-导读与索引",
+          "url": "/kb/15-Harness精读/00-导读与索引.html",
+          "category": "Harness 精读"
+        },
+        {
+          "title": "03-费曼精读-时空可组合性论文",
+          "url": "/kb/12-学习方法论/03-费曼精读-时空可组合性论文.html",
+          "category": "学习方法论"
+        }
+      ],
+      "modified": [
+        {
+          "title": "来源、合并与取舍",
+          "url": "/kb/00-总览/02-来源与取舍.html",
+          "category": "总览"
+        },
+        {
+          "title": "知识地图：这个库里有什么",
+          "url": "/kb/00-总览/00-知识地图.html",
+          "category": "总览"
+        },
+        {
+          "title": "费曼学习法",
+          "url": "/kb/12-学习方法论/01-费曼学习法.html",
+          "category": "学习方法论"
+        }
+      ],
+      "removed": []
+    },
     {
       "date": "2026-11-05",
       "added": [

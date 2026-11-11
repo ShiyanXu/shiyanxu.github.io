@@ -2,15 +2,19 @@
   "version": 1,
   "files": {
     "00-总览/00-知识地图.md": {
-      "sha": "9f98320dfd76fe5ea0eda7e07c778d0a1142c1fa6d05cdc068e77114781c0eee",
+      "sha": "4e16be1b1ef22f79ff22936de548e8a0df2dedb0d2251ef5c52a23867e953795",
       "title": "知识地图：这个库里有什么",
       "dir": "00-总览",
       "first": "2026-10-29",
-      "last": "2026-10-29",
+      "last": "2026-11-11",
       "events": [
         {
           "date": "2026-10-29",
           "action": "added"
+        },
+        {
+          "date": "2026-11-11",
+          "action": "modified"
         }
       ]
     },
@@ -28,15 +32,19 @@
       ]
     },
     "00-总览/02-来源与取舍.md": {
-      "sha": "f165cfbf9265ebdee3302d60439d366d3e740c4d440245e2fba553befc9c7d96",
+      "sha": "988fb2a1090e17c557fdc5e1e0679d1fb5899fd504b02fae21df23c1efce8b7c",
       "title": "来源、合并与取舍",
       "dir": "00-总览",
       "first": "2026-10-29",
-      "last": "2026-10-29",
+      "last": "2026-11-11",
       "events": [
         {
           "date": "2026-10-29",
           "action": "added"
+        },
+        {
+          "date": "2026-11-11",
+          "action": "modified"
         }
       ]
     },
@@ -678,15 +686,19 @@
       ]
     },
     "12-学习方法论/01-费曼学习法.md": {
-      "sha": "8e7571d2de411743115c963b776f7660d9638f7a09c740a9fa870c1c40413793",
+      "sha": "dd44d4ac19347f303118050175cf93171eb47220a41bae2478db58963c49286b",
       "title": "费曼学习法",
       "dir": "12-学习方法论",
       "first": "2026-10-29",
-      "last": "2026-10-29",
+      "last": "2026-11-11",
       "events": [
         {
           "date": "2026-10-29",
           "action": "added"
+        },
+        {
+          "date": "2026-11-11",
+          "action": "modified"
         }
       ]
     },
@@ -793,8 +805,34 @@
           "action": "added"
         }
       ]
+    },
+    "12-学习方法论/03-费曼精读-时空可组合性论文.md": {
+      "sha": "ff45937151139809739548a1a01d55892c426bb2fcde97dcd6d91c588a068ca1",
+      "title": "03-费曼精读-时空可组合性论文",
+      "dir": "12-学习方法论",
+      "first": "2026-11-11",
+      "last": "2026-11-11",
+      "events": [
+        {
+          "date": "2026-11-11",
+          "action": "added"
+        }
+      ]
+    },
+    "15-Harness精读/00-导读与索引.md": {
+      "sha": "5ad26fd47860a91f22230181df2604ab88795766f2c77e487bd20bd2bf1abe3c",
+      "title": "00-导读与索引",
+      "dir": "15-Harness精读",
+      "first": "2026-11-11",
+      "last": "2026-11-11",
+      "events": [
+        {
+          "date": "2026-11-11",
+          "action": "added"
+        }
+      ]
     }
   },
   "removed": [],
-  "generated": "2026-11-05T10:09:01"
+  "generated": "2026-11-11T22:31:03"
 }
