@@ -4,12 +4,12 @@ title: "Transformer 与注意力机制"
 kb_cat: "LLM 原理与训练"
 kb_cat_key: "09-LLM原理与训练"
 kb_src: "09-LLM原理与训练/01-Transformer与注意力.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # Transformer 与注意力机制
 
-> 素材来源：长文《Transformer 全解——完整拆解 Transformer 架构，并从零开始逐步编写一个类似 BERT 的模型》（#39）。本篇补齐截图之外的细节。
+> 素材来源：长文《Transformer 全解——完整拆解 Transformer 架构，并从零开始逐步编写一个类似 BERT 的模型》。本篇补齐截图之外的细节。
 
 ## 章节脉络
 
@@ -70,4 +70,3 @@ LayerNorm 稳定训练；FFN（两层 MLP + 激活）提供非线性容量；残
 - 博文《Transformer 全解》（vizuaranewsletter.com/p/the-transformers）
 - 论文《Attention Is All You Need》
 
-**来源**：#39；两份原报告的技术细节段落几乎逐条同文，已合并。

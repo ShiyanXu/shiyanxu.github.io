@@ -4,12 +4,12 @@ title: "从 Transformer 到晶体管：把整条技术栈走一遍"
 kb_cat: "LLM 原理与训练"
 kb_cat_key: "09-LLM原理与训练"
 kb_src: "09-LLM原理与训练/04-从Transformer到晶体管.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # 从 Transformer 到晶体管：把整条技术栈走一遍
 
-> 素材来源：Project Titania（`pengberg/titania`，#58）。Slogan：*A large language model, from transformer to transistor.*
+> 素材来源：Project Titania（`pengberg/titania`）。Slogan：*A large language model, from transformer to transistor.*
 
 ## 它是什么
 
@@ -45,15 +45,15 @@ kb_updated: "2026-10-29"
 
 | 资源 | 覆盖 | 特点 |
 |---|---|---|
-| 《Transformer 全解》（#39） | 模型结构 | 从零实现类 BERT |
-| `deep-learning-notes`（#6） | PyTorch → Attention → GAN/CLIP/Diffusion/SAM3 | 成体系、含公式推导与代码 |
-| 《Hands on Modern RL》（#10） | RL / RLHF | 补齐 PPO/DPO/GRPO |
-| 《CUDA for Deep Learning》（#7） | kernel 层 | 到 Flash Attention |
-| Titania（#58） | 全栈 | 到指令集与模拟器 |
+| 《Transformer 全解》 | 模型结构 | 从零实现类 BERT |
+| `deep-learning-notes` | PyTorch → Attention → GAN/CLIP/Diffusion/SAM3 | 成体系、含公式推导与代码 |
+| 《Hands on Modern RL》 | RL / RLHF | 补齐 PPO/DPO/GRPO |
+| 《CUDA for Deep Learning》 | kernel 层 | 到 Flash Attention |
+| Titania | 全栈 | 到指令集与模拟器 |
 
 ## 延伸：一条与 AI 无关的收藏
 
-#1 是《从零开始的 OpenWrt》教程，目录包括：基础入门（OpenWrt 与其他 Linux 的不同、路由器与串口、文件系统原理、三种固件、刷机）、移植固件、逆向固件、Flash、移植无线驱动。
+另有一条《从零开始的 OpenWrt》教程，目录包括：基础入门（OpenWrt 与其他 Linux 的不同、路由器与串口、文件系统原理、三种固件、刷机）、移植固件、逆向固件、Flash、移植无线驱动。
 
 它属于**嵌入式 / 网络工程**，与本批 AI 主线无关，但因信息完整作为知识留档保留。
 
@@ -64,4 +64,3 @@ kb_updated: "2026-10-29"
 - 基本功为什么重要：见 [根基崩溃论](../11-职业与合规/01-根基崩溃论.md)
 - 推理性能：见 [CUDA与推理优化](03-CUDA与推理优化.md)
 
-**来源**：#1、#6、#7、#10、#39、#58；两份原报告此段重合，OpenWrt 部分按「低权重留档」处理。

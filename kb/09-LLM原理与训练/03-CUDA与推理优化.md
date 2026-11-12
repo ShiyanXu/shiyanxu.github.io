@@ -4,12 +4,12 @@ title: "CUDA 与推理优化：为什么 Flash Attention 重要"
 kb_cat: "LLM 原理与训练"
 kb_cat_key: "09-LLM原理与训练"
 kb_src: "09-LLM原理与训练/03-CUDA与推理优化.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # CUDA 与推理优化：为什么 Flash Attention 重要
 
-> 素材来源：《CUDA for Deep Learning》（Manning MEAP，可免费阅读，#7）。核心问题是「GPU 算力过剩、带宽不足」。
+> 素材来源：《CUDA for Deep Learning》（Manning MEAP，可免费阅读）。核心问题是「GPU 算力过剩、带宽不足」。
 
 ## 一本书的定位
 
@@ -59,4 +59,3 @@ GPU 的算力增长快于显存带宽增长，于是很多算子**不是算不�
 - 论文 *FlashAttention*
 - NVIDIA Nsight Compute 文档
 
-**来源**：#7；两份原报告此段重合，已合并并补入优化顺序。

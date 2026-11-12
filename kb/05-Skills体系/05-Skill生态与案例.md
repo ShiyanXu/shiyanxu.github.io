@@ -4,12 +4,12 @@ title: "Skill 生态与典型案例"
 kb_cat: "Skills 体系"
 kb_cat_key: "05-Skills体系"
 kb_src: "05-Skills体系/05-Skill生态与案例.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # Skill 生态与典型案例
 
-> 一份「别人已经做出来的 Skill」的样本集：看它们解决什么问题、怎么触发、有什么可借鉴的设计。来源 #11、#15、#16、#24、#26、#32、#37、#43、#61、#73。
+> 一份「别人已经做出来的 Skill」的样本集：看它们解决什么问题、怎么触发、有什么可借鉴的设计。
 
 ## 一、资源站：skills.qiaomu.ai
 
@@ -19,7 +19,7 @@ kb_updated: "2026-10-29"
 
 **可借鉴的产品决策**：用「每类不超过 10 个」倒逼质量，而不是比谁收录多。这与 Skill 的加载机制（描述词越多越容易抢触发）一致。
 
-## 二、设计类：OJO Design Skills（#43）
+## 二、设计类：OJO Design Skills
 
 即插即用的设计类 Skill 包，让 AI 编程代理「学会做真正的设计决策」，而不是生成千篇一律的「AI 味」界面。
 
@@ -27,7 +27,7 @@ kb_updated: "2026-10-29"
 
 对做前端/PPT 的人，这类 Skill 的价值是**把「审美」变成可执行的约束**。
 
-## 三、对抗模型惯性：geju（让 Codex 格局打开，#11）
+## 三、对抗模型惯性：geju（让 Codex 格局打开）
 
 对抗 Codex「过度谨慎 / 求稳」的四大问题：
 
@@ -39,7 +39,7 @@ kb_updated: "2026-10-29"
 
 启示：Skill 不只用来「加能力」，也可以用来**改模型的默认倾向**。
 
-## 四、写作风格治理：less-ai-tone（去 AI 味，#61）
+## 四、写作风格治理：less-ai-tone（去 AI 味）
 
 GitHub 项目 `larashero3-dotcom/liefiat-less-ai-tone`，用语言学研究方法**量化「什么是 AI 味」**。
 
@@ -67,17 +67,17 @@ GitHub 项目 `larashero3-dotcom/liefiat-less-ai-tone`，用语言学研究方�
 
 **这是全批内容里最硬的一块数据**：它把「文风」从审美问题变成了可统计、可检测、可回归的问题。
 
-## 五、内容生产：info-digest（#15）
+## 五、内容生产：info-digest
 
 把 AI 资讯整理成可发布内容，四条原则：读者视角、联网核查、交代背景、适配平台格式（X/微博偏纯文本、短小精炼）。完整 SKILL.md 示例见 [Skill的结构与渐进式披露](02-Skill的结构与加载.md)。
 
-## 六、配图与交付：baoyu-design（#16）
+## 六、配图与交付：baoyu-design
 
 制作 PPT / 动画 / 网站时，可调用 AI 生图 Skill 配图（Codex 用内置画图工具；Claude Code 配合 baoyu-image-gen 调用 Codex CLI），自动在 PPT 合适位置插入配图，**连图导出为 PPTX**，再用 PowerPoint / Keynote 二次编辑。
 
 启示：Skill 的终点可以是**一份能交付的文件**，不只是文本。
 
-## 七、模拟推演：热搜推演 + MiroFish（#24）
+## 七、模拟推演：热搜推演 + MiroFish
 
 ```
 抓取当前热搜 → 先问你想衍生创作哪条 → 自行检索整理事件
@@ -88,11 +88,11 @@ GitHub 项目 `larashero3-dotcom/liefiat-less-ai-tone`，用语言学研究方�
 
 这是「Skill 编排多 Agent 模拟」的代表：Skill 负责流程，MiroFish 负责仿真。
 
-## 八、跨模型协作：Kimi Code + ChatGPT（#26）
+## 八、跨模型协作：Kimi Code + ChatGPT
 
 一个让 Kimi Code **一边写代码、一边与 ChatGPT 讨论**、做研究、设计架构的 Skill。用外部模型补自己的盲区，是「多模型分工」的轻量版。
 
-## 九、提示词固化的证据：grill-me / grill-with-docs（#73）
+## 九、提示词固化的证据：grill-me / grill-with-docs
 
 提示词视频的评论区指出，已有人把「先反问再回答」封装成 skill 并开源：`/grill-with-docs`、`/grill-me`。这印证了**「好提示词 → 固化成 Skill」已是主流路径**。
 
@@ -131,4 +131,3 @@ GitHub 项目 `larashero3-dotcom/liefiat-less-ai-tone`，用语言学研究方�
 - GitHub：`joeseesun/qiaomu-meta-skill`、`touchine-ojo/OJO-Design-Skills`、`hylarucoder/hai-stack`（geju）、`larashero3-dotcom/liefiat-less-ai-tone`、`karminski/mirofish-skill`
 - OpenAI Developers Blog《Rethinking skills and prompts for GPT-6 Astra》
 
-**来源**：#11、#15、#16、#24、#26、#32、#37、#43、#61、#73；两份原报告的「Skill 生态」段落一为叙述一为清单，已按「一个案例一模块」重组。

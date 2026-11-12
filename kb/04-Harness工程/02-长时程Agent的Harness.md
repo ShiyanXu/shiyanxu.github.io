@@ -4,7 +4,7 @@ title: "长时程 Agent 的 Harness：把「跨窗口交接」当一等公民"
 kb_cat: "Harness 工程"
 kb_cat_key: "04-Harness工程"
 kb_src: "04-Harness工程/02-长时程Agent的Harness.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # 长时程 Agent 的 Harness：把「跨窗口交接」当一等公民
@@ -139,4 +139,4 @@ Claude Agent SDK 本身有压缩（compaction）这类上下文管理能力，�
 ## 来源
 
 - Clippings 原文标题：Effective harnesses for long-running agents
-- 原文出处：Anthropic Research，https://www.anthropic.com/research/effective-harnesses-for-long-running-agents（2025-11-26，作者 Justin Young）
+- 原文：[Effective harnesses for long-running agents](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents)（Anthropic Research，2025-11-26，作者 Justin Young）

@@ -4,7 +4,7 @@ title: "MCP 协议原理，以及它与 Computer Use 的取舍"
 kb_cat: "MCP 与工具接入"
 kb_cat_key: "06-MCP与工具接入"
 kb_src: "06-MCP与工具接入/01-MCP协议原理与取舍.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # MCP 协议原理，以及它与 Computer Use 的取舍
@@ -41,7 +41,7 @@ Anthropic 于 **2024 年 11 月**开源的**开放协议**，用统一方式让 
 2. **有 API 没 MCP**：先写一个薄 MCP Server，比用 Computer Use 划算。
 3. **没 API 没 MCP**：才用 Computer Use 做「最后一公里」的界面操作。
 
-反例（#50）：做 Blender 建模时**不要用 Computer Use，也不要用官方 MCP 插件**——社区已有更稳的第三方 Blender MCP。用 Computer Use 点 Blender 的界面，慢且易错。
+反例：做 Blender 建模时**不要用 Computer Use，也不要用官方 MCP 插件**——社区已有更稳的第三方 Blender MCP。用 Computer Use 点 Blender 的界面，慢且易错。
 
 ## MCP 与 Skill 的关系
 

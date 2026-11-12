@@ -4,12 +4,12 @@ title: "实战：Blender 建模、MMD 自动化，以及 adb 报销闭环"
 kb_cat: "MCP 与工具接入"
 kb_cat_key: "06-MCP与工具接入"
 kb_src: "06-MCP与工具接入/02-实战：Blender、MMD与adb.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # 实战：Blender 建模、MMD 自动化，以及 adb 报销闭环
 
-> 三个案例，分别对应「MCP 替代 Computer Use」「Skill 编排 MCP」「Computer Use 补空白」。来源 #23、#50、#51、#55。
+> 三个案例，分别对应「MCP 替代 Computer Use」「Skill 编排 MCP」「Computer Use 补空白」。
 
 ## 案例一：Blender 建模，用第三方 MCP 而不是 Computer Use
 
@@ -18,12 +18,12 @@ kb_updated: "2026-10-29"
 - 更曲面、更复杂细致的模型，需要用 **Tripo**（文本/图像生成 3D 模型的服务）。
 - 参数建议：**思考强度设为 Medium，通过 `/goal` 设置目标，不要一味提高思考强度。**
 
-评论区补充（#51）：
+评论区补充：
 
 - 想做 MMD 也是同一个 MCP，再装 **mmd-tools** 插件即可；
 - 有人问「约 5 万行规模的 Python 代码适合什么思考等级」，博主反问「看你代码是什么业务了」——**强度要按任务形态定，不能按代码量定。**
 
-## 案例二：把「看教程」也自动化（#23）
+## 案例二：把「看教程」也自动化
 
 MMD 有很多背景知识，需要「一边看视频一边教 Codex」。于是作者写了个 Skill：
 
@@ -36,7 +36,7 @@ MMD 有很多背景知识，需要「一边看视频一边教 Codex」。于是�
 
 **这是「Skill 编排 MCP，把非结构化的人类知识（视频）转成 Agent 可消费的文本」的典型**：MCP 提供下载/转录/抽帧能力，Skill 规定顺序与产物格式。
 
-## 案例三：Computer Use 做真实业务闭环（#55）
+## 案例三：Computer Use 做真实业务闭环
 
 让 Codex 用 **adb** 操作手机：
 
@@ -68,4 +68,3 @@ MMD 有很多背景知识，需要「一边看视频一边教 Codex」。于是�
 - MCP 与 Computer Use 的取舍原则：见 [MCP协议原理与取舍](01-MCP协议原理与取舍.md)
 - 安全边界：见 [MCP配置与安全边界](03-MCP配置与安全边界.md)
 
-**来源**：#23、#50、#51、#55；两份原报告一为「MCP 实战」一为「MCP 与工具接入」，已合并为三个案例。

@@ -4,7 +4,7 @@ title: "Domain Harness 五步法：把领域知识做进模型外面那层壳"
 kb_cat: "Harness 工程"
 kb_cat_key: "04-Harness工程"
 kb_src: "04-Harness工程/03-Domain-Harness设计方法.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # Domain Harness 五步法：把领域知识做进模型外面那层壳
@@ -138,6 +138,6 @@ Pi 可能好一点：足够简单，设计理念也简单，就算只靠模型�
 
 ## 来源
 
-- Clippings 原文：《Everything is Harness： 从 Prompt Engineering 到 Context Engineering 再到 Harness Engineering》，白宦成，2026-10-26，https://www.ixiqin.com/2026/10/26/harness-engineering/
+- 原文：[Everything is Harness：从 Prompt Engineering 到 Context Engineering 再到 Harness Engineering](https://www.ixiqin.com/2026/10/26/harness-engineering/)（白宦成，2026-10-26）
 - AI应用/思想/Harness.md：上述原文「在这样的生态格局下，我们如何做好 Domain Harness？」一节的摘录，只含五步，不含演进与定义部分
 - 原文引用：Mitchell Hashimoto《My AI Adoption Journey》（2026-02-05）；OpenAI《Harness engineering: leveraging Codex in an agent-first world》（2026-02-11）；Anthropic《Effective context engineering for AI agents》《Effective harnesses for long-running agents》

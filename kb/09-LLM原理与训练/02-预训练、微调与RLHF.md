@@ -4,12 +4,12 @@ title: "预训练、微调与 RLHF（PPO / DPO / GRPO）"
 kb_cat: "LLM 原理与训练"
 kb_cat_key: "09-LLM原理与训练"
 kb_src: "09-LLM原理与训练/02-预训练、微调与RLHF.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # 预训练、微调与 RLHF（PPO / DPO / GRPO）
 
-> 素材来源：《Hands on Modern RL》（#10）与深度学习笔记（#6）。这一节解释「模型为什么会对话、又为什么需要对齐」。
+> 素材来源：《Hands on Modern RL》与深度学习笔记。这一节解释「模型为什么会对话、又为什么需要对齐」。
 
 ## 训练的三个阶段
 
@@ -66,4 +66,3 @@ RLHF 用人类偏好打分，副作用是模型学会「附和用户以获取更
 - 论文：*DPO*、*DeepSeekMath (GRPO)*、*PPO*
 - 仓库 `jshn9515/deep-learning-notes`
 
-**来源**：#6、#7、#10；两份原报告此段内容一致，已合并并补入「三阶段」与直觉解释。

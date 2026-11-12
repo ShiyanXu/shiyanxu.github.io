@@ -4,12 +4,12 @@ title: "Skill 的定位：模型越强，为什么反而更需要 Skill"
 kb_cat: "Skills 体系"
 kb_cat_key: "05-Skills体系"
 kb_src: "05-Skills体系/01-Skill的定位与价值.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # Skill 的定位：模型越强，为什么反而更需要 Skill
 
-> 来源 #27（魔法师蛋小丁）、#57（OpenAI 文章）、#15。这个问题的答案决定了整个 Skills 生态的合理性。
+> 这个问题的答案决定了整个 Skills 生态的合理性。
 
 ## 被质疑的问题
 
@@ -32,7 +32,7 @@ kb_updated: "2026-10-29"
 
 一句话：**Skill 是一种软件资产，不是一段提示词。**
 
-## 官方也在重思 Skill（#57）
+## 官方也在重思 Skill
 
 OpenAI 文章《Rethinking skills and prompts for GPT-6 Astra》篇幅不长但含金量高。一个实用技巧：**把其中「Better skills」章节直接复制给模型，让模型审查并优化你自己的 Skill。**
 
@@ -54,4 +54,3 @@ OpenAI 文章《Rethinking skills and prompts for GPT-6 Astra》篇幅不长但�
 - Skill 的结构与加载机制：见 [Skill的结构与渐进式披露](02-Skill的结构与加载.md)
 - 与 MCP / Subagent / Prompt 的分工：见 [Skill的边界：与MCP、Subagent、Prompt](04-Skill与MCP-Subagent-Prompt的边界.md)
 
-**来源**：#15、#27、#57；两份原报告在「Skill 的定位」一段表述高度重合，取更完整的一版并补入判据。

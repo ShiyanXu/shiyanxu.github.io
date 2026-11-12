@@ -4,7 +4,7 @@ title: "Harness 是什么：模型之外的那一层"
 kb_cat: "Harness 工程"
 kb_cat_key: "04-Harness工程"
 kb_src: "04-Harness工程/01-Harness是什么.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # Harness 是什么：模型之外的那一层
@@ -75,4 +75,4 @@ kb_updated: "2026-10-29"
 
 ## 来源
 
-原始截图（#13、#14、#47）中「模型层 vs Harness 层」的讨论；概念边界与 Harness Engineering 的关系见 Clippings《Everything is Harness》一文。
+原始截图中「模型层 vs Harness 层」的讨论；概念边界与 Harness Engineering 的关系见 Clippings《Everything is Harness》一文。

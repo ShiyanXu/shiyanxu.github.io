@@ -4,12 +4,12 @@ title: "Skill 的结构与渐进式披露"
 kb_cat: "Skills 体系"
 kb_cat_key: "05-Skills体系"
 kb_src: "05-Skills体系/02-Skill的结构与加载.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # Skill 的结构与渐进式披露
 
-> 官方定义：一个 Skill 就是一个**目录**，核心是 `SKILL.md`。来源 #15 的 info-digest 图解、Anthropic Agent Skills 规范。
+> 官方定义：一个 Skill 就是一个**目录**，核心是 `SKILL.md`。参考 info-digest 的图解与 Anthropic Agent Skills 规范。
 
 ## 目录结构
 
@@ -84,4 +84,3 @@ description: 把 AI 资讯整理成可直接发布的中文短内容。当用户
 - Skill 与 MCP 的边界：见 [Skill的边界：与MCP、Subagent、Prompt](04-Skill与MCP-Subagent-Prompt的边界.md)
 - 官方规范与 SDK：agentskills.io
 
-**来源**：#15 的 info-digest 示例、Anthropic Agent Skills 官方结构；两份原报告此段几乎逐字相同，已合并。

@@ -4,12 +4,12 @@ title: "长任务与 Ralph Loop"
 kb_cat: "Agent 心法"
 kb_cat_key: "01-Agent心法"
 kb_src: "01-Agent心法/03-长任务与Ralph-Loop.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # 长任务与 Ralph Loop
 
-> 一句话：**不让长上下文背锅，让每一轮都从干净的上下文重新开始。** 来源 #3、#22。
+> 一句话：**不让长上下文背锅，让每一轮都从干净的上下文重新开始。**
 
 ## 代表工具：CodexPotter
 
@@ -70,4 +70,3 @@ Ralph Loop 是「把一个目标做完」；Bridgic 的 `/build` 是「把一件
 - CodexPotter 项目
 - 《Loop Engineering》（Caleb Writes Code）
 
-**来源**：#3、#22；两份原报告的 Ralph Loop 段落内容重合，已合并。

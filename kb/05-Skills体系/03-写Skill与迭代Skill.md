@@ -4,12 +4,12 @@ title: "写 Skill、评测 Skill、迭代 Skill"
 kb_cat: "Skills 体系"
 kb_cat_key: "05-Skills体系"
 kb_src: "05-Skills体系/03-写Skill与迭代Skill.md"
-kb_updated: "2026-10-29"
+kb_updated: "2026-11-12"
 ---
 
 # 写 Skill、评测 Skill、迭代 Skill
 
-> 三件事：**别用超高档写**、**像软件一样迭代**、**有一套可复用的生产流水线**。来源 #21、#17、#32、#57。
+> 三件事：**别用超高档写**、**像软件一样迭代**、**有一套可复用的生产流水线**。
 
 ## 一、写 Skill 的取舍：不要「一步到位」
 
@@ -116,4 +116,3 @@ OpenAI《Rethinking skills and prompts for GPT-6 Astra》里的「Better skills�
 - Skill 的结构约束：见 [Skill的结构与渐进式披露](02-Skill的结构与加载.md)
 - 生态里的现成案例：见 [Skill生态与典型案例](05-Skill生态与案例.md)
 
-**来源**：#17、#21、#32、#57；两份原报告此段内容重合（一份写「取舍」，一份写「迭代」），已合并并补入评测表。
