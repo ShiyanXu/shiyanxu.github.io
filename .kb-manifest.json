@@ -2,11 +2,11 @@
   "version": 1,
   "files": {
     "00-总览/00-知识地图.md": {
-      "sha": "e9a28d1bc4997dfc10f328d8a3be2de2d31f785793fbcfb465cc7f3d6645e012",
+      "sha": "eeb41cd753408f54d6853274eeb9196946ab6e19a3ee9066fc248f528c519567",
       "title": "知识地图：这个库里有什么",
       "dir": "00-总览",
       "first": "2026-10-29",
-      "last": "2026-11-13",
+      "last": "2026-11-16",
       "events": [
         {
           "date": "2026-10-29",
@@ -22,6 +22,10 @@
         },
         {
           "date": "2026-11-13",
+          "action": "modified"
+        },
+        {
+          "date": "2026-11-16",
           "action": "modified"
         }
       ]
@@ -40,11 +44,11 @@
       ]
     },
     "00-总览/02-来源与取舍.md": {
-      "sha": "311db183fca459f49fc3b55f09caa15520a15d3adfd0d7db6849458da010ba31",
+      "sha": "5149a3709c5fb39a7506b7957ee2a58b9abf2d9223da08cbda26bdfdb40a10f2",
       "title": "来源、合并与取舍",
       "dir": "00-总览",
       "first": "2026-10-29",
-      "last": "2026-11-13",
+      "last": "2026-11-16",
       "events": [
         {
           "date": "2026-10-29",
@@ -60,6 +64,10 @@
         },
         {
           "date": "2026-11-13",
+          "action": "modified"
+        },
+        {
+          "date": "2026-11-16",
           "action": "modified"
         }
       ]
@@ -1070,8 +1078,138 @@
           "action": "added"
         }
       ]
+    },
+    "05-Skills体系/06-质询式需求澄清.md": {
+      "sha": "5613be06a82a2795d97cf230b5d416ce10afe436019ce417ce1a1068971ed18e",
+      "title": "质询式需求澄清：grill-me 与 grill-with-docs",
+      "dir": "05-Skills体系",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "12-学习方法论/04-AI-Agent学习路径知识网络.md": {
+      "sha": "4c70ace2b9b50acb2ef22fab9b4f4aa0f7fc9975d4cc033b03360b3a23a91680",
+      "title": "04-AI-Agent学习路径知识网络",
+      "dir": "12-学习方法论",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/00-导读.md": {
+      "sha": "6a7a6bd9a199eeabdc97682a487e7ec73c5b7fcfcfeb32b29479c95007e35593",
+      "title": "00-导读",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/01-通识与直觉.md": {
+      "sha": "d67a49b0cee6a0ae2eff36b21cc7d31a69a2a5b108a03f3674fc8fd34375ea01",
+      "title": "01-通识与直觉",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/02-模型原理.md": {
+      "sha": "5c69ac1fb4956e0c42a25e91e6feca15117f47799a5dcbac2e51ad678b3857ff",
+      "title": "02-模型原理",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/03-应用开发与RAG.md": {
+      "sha": "31defb0a16bd7292c1b75273e217b462b8c83e3db813f1eb477acebb021ae4d3",
+      "title": "03-应用开发与RAG",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/04-Agent内核.md": {
+      "sha": "a8b4085572191ad3331dd80e716ebf62e25e84f80c560ca09fb2866a5f59a7ba",
+      "title": "04-Agent内核",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/05-Harness与编排.md": {
+      "sha": "db22d39b6c491c7476e99f1cec696f5cd7f76a2b67497066dad8b2ee30bbd30e",
+      "title": "05-Harness与编排",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/06-评测观测与上线.md": {
+      "sha": "17a3db9b9bf24e71f6a2757c7d4e1f5c6d6d291b18c56481a40d787ebbd8272e",
+      "title": "06-评测观测与上线",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
+    },
+    "16-AI与Agent基础/07-设计与反求.md": {
+      "sha": "03a3696f5d6cc121140d9300b82ef0f5a67b58a0e1aa5d684d89dcfccf683d31",
+      "title": "07-设计与反求",
+      "dir": "16-AI与Agent基础",
+      "first": "2026-11-16",
+      "last": "2026-11-16",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "action": "added"
+        }
+      ]
     }
   },
   "removed": [],
-  "generated": "2026-11-13T22:31:01"
+  "generated": "2026-11-16T22:31:02"
 }

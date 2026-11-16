@@ -1,7 +1,75 @@
 {
-  "total": 66,
-  "last_sync": "2026-11-13T22:31:01",
+  "total": 76,
+  "last_sync": "2026-11-16T22:31:02",
   "days": [
+    {
+      "date": "2026-11-16",
+      "added": [
+        {
+          "title": "00-导读",
+          "url": "/kb/16-AI与Agent基础/00-导读.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "01-通识与直觉",
+          "url": "/kb/16-AI与Agent基础/01-通识与直觉.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "02-模型原理",
+          "url": "/kb/16-AI与Agent基础/02-模型原理.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "03-应用开发与RAG",
+          "url": "/kb/16-AI与Agent基础/03-应用开发与RAG.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "04-AI-Agent学习路径知识网络",
+          "url": "/kb/12-学习方法论/04-AI-Agent学习路径知识网络.html",
+          "category": "学习方法论"
+        },
+        {
+          "title": "04-Agent内核",
+          "url": "/kb/16-AI与Agent基础/04-Agent内核.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "05-Harness与编排",
+          "url": "/kb/16-AI与Agent基础/05-Harness与编排.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "06-评测观测与上线",
+          "url": "/kb/16-AI与Agent基础/06-评测观测与上线.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "07-设计与反求",
+          "url": "/kb/16-AI与Agent基础/07-设计与反求.html",
+          "category": "AI 与Agent 基础"
+        },
+        {
+          "title": "质询式需求澄清：grill-me 与 grill-with-docs",
+          "url": "/kb/05-Skills体系/06-质询式需求澄清.html",
+          "category": "Skills 体系"
+        }
+      ],
+      "modified": [
+        {
+          "title": "来源、合并与取舍",
+          "url": "/kb/00-总览/02-来源与取舍.html",
+          "category": "总览"
+        },
+        {
+          "title": "知识地图：这个库里有什么",
+          "url": "/kb/00-总览/00-知识地图.html",
+          "category": "总览"
+        }
+      ],
+      "removed": []
+    },
     {
       "date": "2026-11-13",
       "added": [
